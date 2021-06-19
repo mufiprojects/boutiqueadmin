@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/datePickerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/datePickerBackground">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:visibility="visible"
+            android:elevation="16dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="12dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="13sp"
+                    android:text="Pick Date"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/dateView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="34sp"
+                            android:textColor="@android:color/black"
+                            android:text="18/06/2021"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/datePickerLayout"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/salesOverviewCard"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            android:elevation="16dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="12dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/salesReportLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalOrdersNoText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="537"
+                            android:textColor="@android:color/black"
+                            android:textSize="34sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No.of Orders"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalAmountText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="₹20,000"
+                            android:textColor="@color/positiveColor"
+                            android:textSize="34sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="Total Order Amount"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Sales Report"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:layout_below="@id/salesOverviewCard"
+            android:visibility="visible"
+            android:elevation="16dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="12dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/deliveryBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="34sp"
+                            android:textColor="@android:color/black"
+                            android:text="VIEW ALL DELIVERY"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/deliveryOverviewCard"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/salesOverviewCard"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="12dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true">
+            <RelativeLayout
+                android:id="@+id/deliveryOverviewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="13sp"
+                    android:text="Delivery Report"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/deliveredNoText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="34sp"
+                            android:textColor="@color/positiveColor"
+                            android:text="10"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Delivered"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/undeliveredText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textSize="34sp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:text="20"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textSize="14sp"
+                            android:text="Undelivered"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+  

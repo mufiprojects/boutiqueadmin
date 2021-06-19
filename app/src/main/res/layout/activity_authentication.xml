@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:layout_centerInParent="true"
+    tools:context=".authentication">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="ENTER YOUR NAME"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="MOBILE NUMBER"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/phoneNumberEditText"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/backButtonColor"
+                android:elevation="16dp"
+                android:text="senD"
+                android:visibility="visible" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="OTP"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/otpEditText"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/singIn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/backButtonColor"
+                android:elevation="16dp"
+                android:text="SUBMIT"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

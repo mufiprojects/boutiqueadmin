@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">boutiqueadmin</string>
+    <string name="remainItems">+%1$s items</string>
+    <string name="numValue">%1$d</string>
+</resources>
