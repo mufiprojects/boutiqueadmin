@@ -89,6 +89,7 @@ public class authentication extends AppCompatActivity {
                         otpEditText.setText(code);
                         verifyVerificationCode(code);
                     }
+                    signInWithPhoneAuthCredential(phoneAuthCredential);
                 }
 
                 @Override
