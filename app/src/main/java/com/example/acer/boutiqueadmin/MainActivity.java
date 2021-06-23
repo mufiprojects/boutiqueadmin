@@ -11,6 +11,7 @@ import android.widget.QuickContactBadge;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     TextView totalNoOfOrdersText;
     TextView totalOrderAmountText;
-    TextView dateView,delBtn;
+    TextView dateView,delBtn,ManageUsersBtn;
 
 
     CardView salesOverviewCard;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         salesOverviewCard=findViewById(R.id.salesOverviewCard);
         dateView=findViewById(R.id.dateView);
         delBtn=findViewById(R.id.deliveryBtn);
+        ManageUsersBtn=findViewById(R.id.manageUsersBtn);
 
 
         getTotalNoOfOrders();
@@ -121,6 +123,12 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 salesActivity.putExtra("deliveryDate","deliveryDate");
                 startActivity(salesActivity);
 
+            }
+        });
+        ManageUsersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,manage_users.class));
             }
         });
         

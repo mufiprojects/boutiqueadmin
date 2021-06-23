@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="25dp"
+    android:layout_marginStart="18dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:layout_marginEnd="18dp"
+    android:elevation="16dp"
+    app:cardCornerRadius="13dp"
+    android:backgroundTint="@color/bsp_blue_focused">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Unni"
+                android:textSize="20sp"
+                 />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/activate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/positiveColor"
+                android:elevation="16dp"
+                android:text="ACTIVATE"
+                android:visibility="visible" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deactivate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/activate_btn"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/workCompleteBackgrounColor"
+                android:elevation="16dp"
+                android:text="DEACTIVATE"
+                android:visibility="visible" />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
